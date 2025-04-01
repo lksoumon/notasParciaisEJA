@@ -7,8 +7,8 @@
 // @match        http://sigeduca.seduc.mt.gov.br/ged/HWMGedAvaliacaoAluno*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gov.br
 // @grant        none
-// @updateURL    https://github.com/lksoumon/sigeducaLancamentos/raw/refs/heads/main/notas.user.js
-// @downloadURL  https://github.com/lksoumon/sigeducaLancamentos/raw/refs/heads/main/notas.user.js
+// @updateURL    https://github.com/lksoumon/notasParciaisEJA/raw/refs/heads/main/notasparciaisEJA.user.js
+// @downloadURL  https://github.com/lksoumon/notasParciaisEJA/raw/refs/heads/main/notasparciaisEJA.user.js
 
 // ==/UserScript==
 var carregado = ''; // variavél para verificar se os dados dos alunos foram carregados
