@@ -4,11 +4,12 @@
 // @version      v1.3
 // @description  try to take over the world!
 // @author       Lucas Monteiro
-// @match        http://sigeduca.seduc.mt.gov.br/ged/HWMGedAvaliacaoAluno*
+// @match        http://sigeduca.seduc.mt.gov.br/ged/hwmlancaavaliacaonota.aspx?*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=gov.br
 // @grant        none
 // @updateURL    https://github.com/lksoumon/notasParciaisEJA/raw/refs/heads/main/notasparciaisEJA.user.js
 // @downloadURL  https://github.com/lksoumon/notasParciaisEJA/raw/refs/heads/main/notasparciaisEJA.user.js
+
 
 // ==/UserScript==
 var carregado = ''; // variavél para verificar se os dados dos alunos foram carregados
@@ -228,16 +229,16 @@ function addCopyBtn(ele,v) {
                 }
             }
             //console.log(document.getElementById('W0135vGRIDGEDMATDISCAVANOTA_0001'));
-            if(document.getElementById('W0135vGRIDGEDMATDISCAVANOTA_0001') ){
-
-                if(document.getElementById('W0135vGRIDGEDMATDISCAVANOTA_0001').value=="0,00" && document.getElementById('span_W0135vTEMLANCAMENTO_0001').textContent.trim() != "Sim"){
-                    //console.log(document.getElementById('W0135vGRIDGEDMATDISCAVANOTA_0001').value);
-                    document.getElementById('W0135vGRIDGEDMATDISCAVANOTA_0001').value = parcial;precisa = 1;
-                    output.push([document.getElementById('span_W0135vGRIDGEDALUCOD_0001').textContent.trim() + " - "+document.getElementById('span_W0135vGRIDGEDALUNOM_0001').textContent.trim(),
-                            document.getElementById("span_vGERTURSAL").textContent.trim(),
-                            eek.options[eek.selectedIndex].text,
-                            "Não",
-                            bb+"º bimestre"]);
+            if(document.getElementById('vGRIDGEDMATDISCAVANOTA_0001') ){
+console.log('foi');
+                if(document.getElementById('vGRIDGEDMATDISCAVANOTA_0001').value=="0,00" && document.getElementById('span_vTEMLANCAMENTO_0001').textContent.trim() == "Não"){
+                    console.log(document.getElementById('vGRIDGEDMATDISCAVANOTA_0001').value);
+                    document.getElementById('vGRIDGEDMATDISCAVANOTA_0001').value = parcial;precisa = 1;
+                    //output.push([document.getElementById('span_W0135vGRIDGEDALUCOD_0001').textContent.trim() + " - "+document.getElementById('span_W0135vGRIDGEDALUNOM_0001').textContent.trim(),
+                    //        document.getElementById("span_vGERTURSAL").textContent.trim(),
+                    //        eek.options[eek.selectedIndex].text,
+                    //        "Não",
+                    //        bb+"º bimestre"]);
 
                 }
 
